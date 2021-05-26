@@ -1,7 +1,28 @@
 *{
     margin: 0 auto;
+    padding: 0;
 }
 
-h3 {
-    text-align: center;
+.principal{
+    margin-top: 20px;
+    border: solid 4px black;
+    height: 640px;
+    width: 360px;
+    display: block;
+}
+
+.values {
+    border: solid 4px red;
+    height: 213px;
+    width: 100%;
+    display: block;
+}
+
+.buttons {
+    border: solid 4px red;
+    height: 420px;
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-wrap: ;
 }
