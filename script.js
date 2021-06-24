@@ -10,8 +10,8 @@ function clean(){
 }
 
 function calcular(){
-    var resultado = document.querySelector('.resposta').innerHTML
+    var resposta = document.querySelector('.resposta').innerHTML
     if (resposta) {
-        document.querySelector('.resposta').innerHTML = eval(resultado)
+        document.querySelector('.resposta').innerHTML = eval(resposta)
     }
 }
