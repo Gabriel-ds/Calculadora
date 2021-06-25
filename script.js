@@ -1,17 +1,22 @@
 
 
 function insert(num) {
-    var numero = document.querySelector('.resposta').innerHTML
-    document.querySelector('.resposta').innerHTML = num + numero
+    var numero = document.querySelector('.resultado').innerHTML
+    document.querySelector('.resultado').innerHTML = numero + num
 }
 
 function clean(){
-    document.querySelector('.resposta').innerHTML = ' '
+    document.querySelector('.resultado').innerHTML = ' '
 }
 
 function calcular(){
-    var resposta = document.querySelector('.resposta').innerHTML
-    if (resposta) {
-        document.querySelector('.resposta').innerHTML = eval(resposta)
-    }
+    var resposta = document.querySelector('.resultado').innerHTML
+    document.querySelector('.resultado').innerHTML = eval(resposta)
 }
+
+function back() {
+    var resposta = document.querySelector('.resultado').innerHTML
+    var remove = resposta.substring(1)
+    document.querySelector('.resultado').innerHTML = remove
+}
+
