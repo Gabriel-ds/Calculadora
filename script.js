@@ -11,7 +11,12 @@ function clean(){
 
 function calcular(){
     var resposta = document.querySelector('.resultado').innerHTML
-    document.querySelector('.resultado').innerHTML = eval(resposta)
+    if(resposta){
+        document.querySelector('.resultado').innerHTML = eval(resposta)
+    } else {
+        document.querySelector('.resultado').innerHTML = 'ERRO'
+    }
+    
 }
 
 function back() {
